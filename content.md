@@ -14,6 +14,146 @@
 
 ------
 
+## Friction of VR Ecosystems
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/gatekeeper.png">
+    <i>Gatekeepers</i>
+  </div>
+  <div>
+    <img data-src="media/img/downloads-installs.png">
+    <i>Installs</i>
+  </div>
+  <div>
+    <img data-src="media/img/closed-door.png">
+    <i>Closed</i>
+  </div>
+</div>
+
+<!-- NOTES -->
+- App stores and corporations control distribution: can take down or block content
+- Downloads / installs are a barrier to consumption: small business pages
+- Closed ecosystem: proprietary engines, steep learning curves, siloed experiences, fragmentation
+- We want VR to be successful, so we want a platform without these points of friction. The answer is WebVR...
+
+------
+
+# WebVR
+
+An open virtual reality platform with the advantages of **the Web**
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/web-is-open.png">
+    <i>Open</i>
+  </div>
+  <div>
+    <img data-src="media/img/web-is-connected.png">
+    <i>Connected</i>
+  </div>
+  <div>
+    <img data-src="media/img/web-is-instant.png">
+    <i>Instant</i>
+  </div>
+</div>
+
+<!-- NOTES -->
+WebVR is...virtual reality in the browser, powered by the Internet
+
+Open:
+- Anyone can publish
+- Open source culture with open standards
+
+Connected:
+- Traverse worlds
+
+Instant:
+- Click a link on Twitter or Weibo, immediate VR experiences
+- No installs
+- Imagine for long tail experiences: shopping & personal spaces
+- Great for long tail bite-sized experiences
+
+Transition:
+- Web has advantages that make it the best platform for the people
+- Need to act to make it reality, can't wait for VR to bake and crystallize
+- Get involved
+
+------
+
+<img class="stretch" data-src="media/img/webvr.png">
+
+Browser APIs that enable WebGL rendering to headsets and access to VR
+sensors
+
+https://w3c.github.io/webvr/
+
+<!-- NOTES -->
+API:
+- Optimized rendering path to headsets
+- Access position and rotation (pose) data
+
+History:
+- Initial WebVR API by Mozilla
+- Working W3C community group
+- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.0 API
+
+Not just a specification, it's implemented...
+
+-----
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/firefox-nightly.png">
+    <i>Firefox Nightly</i>
+  </div>
+  <div>
+    <img data-src="media/img/chromium.png">
+    <i>Chromium (Experimental)</i>
+  </div>
+  <div>
+    <img data-src="media/img/samsung-browser.png">
+    <i>Samsung Internet</i>
+  </div>
+  <div>
+    <img data-src="media/img/google-cardboard.png">
+    <i>Mobile Polyfill</i>
+  </div>
+</div>
+
+<!-- NOTES -->
+- Firefox + Chrome WebVR 1.0 hits release channels by early 2017
+- Currently behind Nightly, custom builds, and flags
+- Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
+- With all the browsers behind it...
+
+------
+
+<!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" -->
+
+<div class="slide__boilerplate">
+  <p>Import WebVR polyfill</p>
+  <p>Set up camera</p>
+  <p>Set up lights</p>
+  <p>Initialize scene</p>
+  <p>Declare and pass canvas</p>
+  <p>Listen to window resize</p>
+  <p>Install VREffect</p>
+  <p>Instantiate renderer</p>
+  <p>Create render loop</p>
+  <p>Preload assets</p>
+  <p>Figure out responsiveness</p>
+  <p>Deal with metatags and mobile</p>
+</div>
+
+<!-- NOTES -->
+- It's still too difficult to create WebVR experiences
+- Huge obstacle if doing small prototypes and experiments
+- Boilerplate needs updating with new versions of WebVR, three.js, and browser quirks
+- Encapsulate all of that into one line...
+
+------
+
 ## Hello World
 
 <!-- .slide: data-background="media/img/aframe.png" data-transition="slide-in none" -->
