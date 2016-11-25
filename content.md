@@ -100,7 +100,7 @@ History:
 
 Not just a specification, it's implemented...
 
------
+------
 
 <div class="captioned-image-row">
   <div>
