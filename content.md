@@ -2,7 +2,7 @@
 
 <div class="talk-title">
   <h1>A-Frame</h1>
-  <p>A web framework for building VR experiences</p>
+  <p>VR体験の構築用ウェブフレームワーク</p>
   <p class="talk-info">
     @andgokevin | Mozilla VR | **aframe.io**
   </p>
@@ -14,20 +14,20 @@
 
 ------
 
-## Friction of VR Ecosystems
+## VRエコシステムにおける軋轢
 
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/gatekeeper.png">
-    <i>Gatekeepers</i>
+    <i>ゲートキーパー</i>
   </div>
   <div>
     <img data-src="media/img/downloads-installs.png">
-    <i>Installs</i>
+    <i>インストール</i>
   </div>
   <div>
     <img data-src="media/img/closed-door.png">
-    <i>Closed</i>
+    <i>クローズド</i>
   </div>
 </div>
 
@@ -41,20 +41,20 @@
 
 # WebVR
 
-An open virtual reality platform with the advantages of **the Web**
+**Web**の利点を用いたオープンなVRプラットフォーム
 
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/web-is-open.png">
-    <i>Open</i>
+    <i>オープン</i>
   </div>
   <div>
     <img data-src="media/img/web-is-connected.png">
-    <i>Connected</i>
+    <i>コネクト</i>
   </div>
   <div>
     <img data-src="media/img/web-is-instant.png">
-    <i>Instant</i>
+    <i>インスタント</i>
   </div>
 </div>
 
@@ -77,13 +77,13 @@ Instant:
 Transition:
 - Web has advantages that make it the best platform for the people
 - Need to act to make it reality, can't wait for VR to bake and crystallize
+- Get involved
 
 ------
 
 <img class="stretch" data-src="media/img/webvr.png">
 
-Browser APIs that enable WebGL rendering to headsets and access to VR
-sensors
+WebGLにヘッドセットへのレンダリングやVRセンサーへのアクセスを可能にしたブラウザAPI
 
 https://w3c.github.io/webvr/
 
@@ -94,8 +94,8 @@ API:
 
 History:
 - Initial WebVR API by Mozilla
-- Working W3C community group, W3C workshop
-- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.2 API
+- Working W3C community group
+- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.0 API
 
 Not just a specification, it's implemented...
 
@@ -189,7 +189,7 @@ https://iswebvrready.com
 
 ------
 
-## Hello World
+## ハロー・ワールド
 
 <!-- .slide: data-background="media/img/aframe.png" data-transition="fade-in slide-out" -->
 
@@ -198,7 +198,7 @@ https://iswebvrready.com
   <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
   <a-scene>
     <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
-    <a-cylinder color="#FFC65D" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
+    <a-cylinder color="#FFC65D" position="1 0.80 -3" radius="0.5" height="1.5"></a-cylinder>
     <a-sphere color="#EF2D5E" position="0 1.25 -5" radius="1.25"></a-sphere>
     <a-plane color="#7BC8A4" position="0 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
     <a-sky color="#ECECEC"></a-sky>
@@ -215,7 +215,7 @@ https://iswebvrready.com
 
 ------
 
-## Hello Metaverse
+## ハロー・メタバース
 
 <i>by Ada Rose Edwards (@lady_ada_king)</i>
 
@@ -233,7 +233,7 @@ https://iswebvrready.com
 
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
-## Works With Everything
+## これら全てで動きます
 
 <div class="captioned-image-row">
   <div>
@@ -271,7 +271,7 @@ https://iswebvrready.com
 
 ------
 
-# Entity-Component-System
+# エンティティ・コンポーネント・システム
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" -->
 
@@ -288,7 +288,7 @@ https://iswebvrready.com
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" -->
 
-## Composing an Entity
+## エンティティを構成する
 
 ```html
 <a-entity>
@@ -302,7 +302,7 @@ https://iswebvrready.com
 
 ------
 
-## Composing an Entity
+## エンティティを構成する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -315,7 +315,7 @@ https://iswebvrready.com
 
 ------
 
-## Composing an Entity
+## エンティティを構成する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -329,7 +329,7 @@ https://iswebvrready.com
 
 ------
 
-## Composing an Entity
+## エンティティを構成する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -345,7 +345,7 @@ https://iswebvrready.com
 
 ------
 
-## Composing an Entity
+## エンティティを構成する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -360,7 +360,7 @@ https://iswebvrready.com
 
 ------
 
-## Composing an Entity
+## エンティティを構成する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -376,7 +376,7 @@ https://iswebvrready.com
 
 ------
 
-## Registering a Component
+## コンポーネントを登録する
 
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
 
@@ -440,12 +440,12 @@ AFRAME.registerComponent('mycomponent', {
 
 <div class="icon-title">
   <img data-src="media/img/registry.png" width="64">
-  <h2>Registry</h2>
+  <h2>レジストリ</h2>
 </div>
 
 <!-- .slide: data-background="media/img/aframe-side.png" -->
 
-Curated collection of A-Frame components/shaders.
+A-Frameコンポーネントやシェーダーの収集された場所
 
 <a class="stretch" href="https://aframe.io/aframe-registry">
   <video loop data-src="media/video/registrypreview.mp4" data-autoplay></video>
@@ -458,11 +458,11 @@ Curated collection of A-Frame components/shaders.
 
 ------
 
-## Inspector
+## Inspector（インスペクタ）
 
 <!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
 
-Visual tool for A-Frame. Just `<ctrl>+<alt>+i`.
+A-Frameのためのヴィジュアルツール。`<ctrl>+<alt>+i`だけ。
 
 <div class="stretch" data-aframe-scene="scenes/80s.html"></div>
 
@@ -470,9 +470,9 @@ Visual tool for A-Frame. Just `<ctrl>+<alt>+i`.
 
 <!-- .slide: data-background-video="media/video/a-painter.mp4" data-background-video-muted="true" data-state="state--bg-dark" -->
 
-## A-Painter
+## A-Painter（A-ペインター）
 
-Paint in VR in the browser.
+ブラウザ内のVRでペイントする
 
 <!-- NOTES -->
 - A-Frame is very powerful
@@ -485,15 +485,15 @@ Paint in VR in the browser.
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/github.png">
-    <i>85 contributors 4000 Stargazers</i>
+    <i>80名のcontributorと4000名のStargazers</i>
   </div>
   <div>
     <img data-src="media/img/slack.png">
-    <i>2000 members on Slack</i>
+    <i>2000名のSlackメンバー</i>
   </div>
   <div>
     <img data-src="media/img/scene-collage-circle.png">
-    <i>100s of featured projects</i>
+    <i>数百の特色あるプロジェクト</i>
   </div>
 </div>
 
