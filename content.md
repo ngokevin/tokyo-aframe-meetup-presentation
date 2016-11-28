@@ -77,7 +77,6 @@ Instant:
 Transition:
 - Web has advantages that make it the best platform for the people
 - Need to act to make it reality, can't wait for VR to bake and crystallize
-- Get involved
 
 ------
 
@@ -95,8 +94,8 @@ API:
 
 History:
 - Initial WebVR API by Mozilla
-- Working W3C community group
-- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.0 API
+- Working W3C community group, W3C workshop
+- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.2 API
 
 Not just a specification, it's implemented...
 
@@ -116,13 +115,20 @@ Not just a specification, it's implemented...
     <i>Samsung Internet</i>
   </div>
   <div>
+    <img data-src="media/img/microsoft-edge.png">
+    <i>Microsoft Edge</i>
+  </div>
+  <div>
     <img data-src="media/img/google-cardboard.png">
     <i>Mobile Polyfill</i>
   </div>
 </div>
 
+https://mozvr.com
+https://iswebvrready.com
+
 <!-- NOTES -->
-- Firefox + Chrome WebVR 1.0 hits release channels by early 2017
+- Firefox + Chrome WebVR 1.0 hits release channels early 2017
 - Currently behind Nightly, custom builds, and flags
 - Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
 - With all the browsers behind it...
@@ -478,11 +484,11 @@ Paint in VR in the browser.
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/github.png">
-    <i>75 contributors 3500 Stargazers</i>
+    <i>85 contributors 4000 Stargazers</i>
   </div>
   <div>
     <img data-src="media/img/slack.png">
-    <i>1750 members on Slack</i>
+    <i>2000 members on Slack</i>
   </div>
   <div>
     <img data-src="media/img/scene-collage-circle.png">
