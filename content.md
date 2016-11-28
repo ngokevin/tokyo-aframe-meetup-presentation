@@ -279,6 +279,137 @@ Not just a specification, it's implemented...
 
 ------
 
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" -->
+
+## Composing an Entity
+
+```html
+<a-entity>
+```
+<!-- .element: class="stretch" -->
+
+<!-- NOTES -->
+- Start with an `<a-entity>`
+- By itself, has no appearance, behavior, functionality
+- Plug in components to add appearance, behavior, functionality
+
+------
+
+## Composing an Entity
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```html
+<a-entity
+  geometry="primitive: sphere; radius: 1.5"
+  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture">
+```
+<!-- .element: class="stretch" -->
+
+------
+
+## Composing an Entity
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```html
+<a-entity
+  geometry="primitive: sphere; radius: 1.5"
+  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
+  position="-1 2 4" rotation="45 0 90" scale="2 2 2">
+```
+<!-- .element: class="stretch" -->
+
+------
+
+## Composing an Entity
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```html
+<a-entity
+  geometry="primitive: sphere; radius: 1.5"
+  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
+  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
+  animation="property: rotation; loop: true; to: 0 360 0"
+  movement-pattern="type: spline; speed: 4">
+```
+<!-- .element: class="stretch" -->
+
+------
+
+## Composing an Entity
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```html
+<a-entity
+  json-model="src: #robot"
+  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
+  animation="property: rotation; loop: true; to: 0 360 0"
+  movement-pattern="type: spline; speed: 4">
+```
+<!-- .element: class="stretch" -->
+
+------
+
+## Composing an Entity
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```html
+<a-entity
+  json-model="src: #robot"
+  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
+  animation="property: rotation; loop: true; to: 0 360 0"
+  movement-pattern="type: attack; target: #player"
+  explode="on: hit">
+```
+<!-- .element: class="stretch" -->
+
+------
+
+## Registering a Component
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```js
+AFRAME.registerComponent('mycomponent', {
+  schema: {
+    foo: {type: 'selector'},
+    bar: {default: 256}
+  },
+
+  init: function () { // ... },
+  update: function () { // ... },
+  remove: function () { // ... },
+  tick: function () { // ... },
+  pause: function () { // ... },
+  play: function () { // ... }
+});
+```
+<!-- .element: class="stretch" -->
+
+```html
+<a-box mycomponent="foo: #box; bar: 300"></a-box>
+```
+
+<!-- NOTES -->
+- Can do anything within a component (full access to three.js, JavaScript, APIs) can get
+  exposed declaratively
+- `schema`: defines how data is parsed from HTML
+- Lifecycle methods:
+  - `init`: component attached, like `componentDidMount`
+  - `update`: component data update, like `componentWillReceiveProps`
+  - `remove`: component detached, like `componentWillUnmount`
+  - `tick`: run on every frame
+- Properties:
+  - `el`: reference to entity element
+  - `data`: component data parsed from HTML
+  - `object3D`: three.js object
+
+------
+
 <!-- .slide: data-background="media/img/standard-components.png" data-background-size="contain" -->
 
 <!-- NOTES -->
